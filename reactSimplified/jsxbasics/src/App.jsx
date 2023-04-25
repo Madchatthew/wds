@@ -7,13 +7,21 @@ function App() {
   return (
     // Use camelCase instead of dash for html attributes, unless using data attribute or aria attribute
     // Can't use class for attribute, use className instead - class is used to make actual classes in react
-    <h1 id="5" tabIndex="1" data-id="something" className="blue">
-      "Hello World!"
-    </h1>
+
+    // <h1 id="5" tabIndex="1" data-id="something" className="blue">
+    //   "Hello World!"
+    // </h1>
+
     // (
     //   // Can't use for attribute, use htmlFor - for is used in react
     //   <label htmlFor="id">Hi</label>
     // )
+
+    // Exercise
+    <div className="large" id="largeDiv">
+      <label htmlFor="inputId">Any text here</label>
+      <input id="inputId" type="number" defaultValue={3} />
+    </div>
   )
 }
 
