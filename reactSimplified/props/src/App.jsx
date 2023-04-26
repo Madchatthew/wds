@@ -1,6 +1,7 @@
 import React from "react"
 import { NameFunc } from "./NameFunc"
 import { NameClass } from "./NameClass"
+import { TodoListItem } from "./TodoListItem"
 
 function App() {
   return (
@@ -9,12 +10,14 @@ function App() {
     //   {/* <NameClass /> */}
     // </div>
 
-    <div>
-      <NameFunc>
-        <span>Child Name</span>
-      </NameFunc>
-      {/* <NameClass /> */}
-    </div>
+    //   <div>
+    //     <NameFunc>
+    //       <span>Child Name</span>
+    //     </NameFunc>
+    //     {/* <NameClass /> */}
+    //   </div>
+
+    <TodoListItem isComplete>Item Checked</TodoListItem>
   )
 }
 
