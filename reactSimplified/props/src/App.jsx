@@ -2,6 +2,7 @@ import React from "react"
 import { NameFunc } from "./NameFunc"
 import { NameClass } from "./NameClass"
 import { TodoListItem } from "./TodoListItem"
+import { TodoListItemClass } from "./TodoListItemClass"
 
 function App() {
   return (
@@ -17,7 +18,13 @@ function App() {
     //     {/* <NameClass /> */}
     //   </div>
 
-    <TodoListItem isComplete>Item Checked</TodoListItem>
+    <div>
+      <NameClass name="Custom Name">This is a child item</NameClass>
+
+      {/* <TodoListItem isComplete>Item List</TodoListItem> */}
+
+      <TodoListItemClass isComplete={false}>Todo Item 1</TodoListItemClass>
+    </div>
   )
 }
 
