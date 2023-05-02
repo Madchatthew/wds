@@ -1,7 +1,8 @@
 import React from "react"
+import { User } from "./User"
 
 function App() {
-  return <h1>Fresh setup</h1>
+  return <User name="Chad" age={46} />
 }
 
 export default App
