@@ -12,13 +12,13 @@ function App() {
         phoneNumber={user.phoneNumber}
         address={user.address}
       />
-
-      <UserCardClass>
-        {user.name}
-        {user.age}
-        {user.phoneNumber}
-        {user.address}
-      </UserCardClass>
+      <br />
+      <UserCardClass
+        name={user.name}
+        age={user.age}
+        phoneNumber={user.phoneNumber}
+        address={user.address}
+      />
     </>
   )
 }
