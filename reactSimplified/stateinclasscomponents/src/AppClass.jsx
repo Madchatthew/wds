@@ -13,10 +13,16 @@ export default class AppClass extends React.Component {
   render() {
     const handleClick = () => {
       this.setState({ name: "Sally" })
-      this.setState({ age: this.state.age + 1 })
+      this.setState((currentState) => {
+        return { age: currentState.age + 1 }
+      })
     }
 
-    return <h1 onClick={handleClick}>Hi {this.state.name}</h1>
+    return (
+      <h1 onClick={handleClick}>
+        Hi {this.state.name} {this.state.age}
+      </h1>
+    )
   }
 }
 
