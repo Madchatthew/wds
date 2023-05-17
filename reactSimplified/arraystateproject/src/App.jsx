@@ -5,10 +5,11 @@ function App() {
 
   function removeFirstElement()
 
-  return
-  <div>{array.join(", ")}
-  <button onClick={removeFirstElement}>Remove First Element</button>
-  </div>
+  return (
+      <div>{array.join(", ")}
+        <button onClick={removeFirstElement}>Remove First Element</button>
+      </div>
+  )
 }
 
 export default App
