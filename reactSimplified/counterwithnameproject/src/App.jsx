@@ -1,21 +1,10 @@
-import { NameTextBox } from "./NameTextBox"
-import { Counter } from "./Counter"
-import { StringNameAge } from "./StringNameAge"
+import React from "react"
+import { FunctionComponent } from "./FunctionComponent"
 
 function App() {
   return (
     <div>
-      <div>
-        <NameTextBox />
-      </div>
-
-      <div>
-        <Counter />
-      </div>
-
-      <div>
-        <StringNameAge />
-      </div>
+      <FunctionComponent />
     </div>
   )
 }
