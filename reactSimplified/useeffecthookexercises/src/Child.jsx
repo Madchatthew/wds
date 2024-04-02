@@ -10,6 +10,10 @@ export function Child() {
   
   useEffect(() => {
     console.log("Mount")
+
+    return () => {
+      console.log("Bye")
+    }
   }, [])
 
   useEffect(() => {
